@@ -1,0 +1,270 @@
+:root {
+    --sena-green-900: #0c8316;
+    --sena-green-800: #1f9d2d;
+    --sena-green-700: #2cb039;
+    --sena-green-100: #e8f7e4;
+    --sena-green-50: #f4f9f2;
+    --sena-navy: #143084;
+    --sena-text: #1d2b22;
+    --sena-muted: #607168;
+    --sena-border: rgba(12, 131, 22, 0.16);
+    --sena-shadow: 0 18px 40px rgba(12, 131, 22, 0.12);
+}
+
+body {
+    background: linear-gradient(180deg, #f5faf5 0%, #edf8ee 100%);
+    color: var(--sena-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--sena-text);
+}
+
+.btn,
+.form-control,
+.form-select,
+.form-check-input,
+.input-group-text {
+    transition: all 0.2s ease-in-out;
+}
+
+.sena-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.sena-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.sena-title {
+    margin: 0;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--sena-green-900);
+}
+
+.sena-subtitle {
+    margin: 0.35rem 0 0;
+    color: var(--sena-muted);
+    font-size: 1.02rem;
+}
+
+.sena-btn,
+.btn.sena-btn {
+    border: none;
+    border-radius: 999px;
+    padding: 0.8rem 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    box-shadow: 0 8px 18px rgba(12, 131, 22, 0.14);
+}
+
+.sena-btn-primary,
+.btn.sena-btn-primary {
+    background: linear-gradient(135deg, var(--sena-green-800), var(--sena-green-700));
+    color: #fff;
+}
+
+.sena-btn-primary:hover,
+.btn.sena-btn-primary:hover {
+    background: linear-gradient(135deg, var(--sena-green-900), var(--sena-green-800));
+    color: #fff;
+}
+
+.sena-btn-secondary,
+.btn.sena-btn-secondary {
+    background: var(--sena-green-100);
+    color: var(--sena-green-900);
+    border: 1px solid transparent;
+}
+
+.sena-btn-secondary:hover,
+.btn.sena-btn-secondary:hover {
+    background: #dff3e1;
+    color: var(--sena-green-900);
+}
+
+.sena-card,
+.card.sena-card,
+.sena-form-card,
+.card.sena-form-card {
+    background: #fff;
+    border: 1px solid var(--sena-border);
+    border-radius: 1.25rem;
+    box-shadow: var(--sena-shadow);
+}
+
+.sena-table-card {
+    overflow: hidden;
+    border: 1px solid var(--sena-border);
+    border-radius: 1.25rem;
+    background: #fff;
+    box-shadow: var(--sena-shadow);
+}
+
+.sena-table-card .table {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.sena-table-card thead th {
+    background: linear-gradient(135deg, var(--sena-green-900), var(--sena-green-700));
+    color: #fff;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.95rem 1rem;
+    vertical-align: middle;
+}
+
+.sena-table-card tbody td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(12, 131, 22, 0.08);
+    color: var(--sena-text);
+    vertical-align: middle;
+}
+
+.sena-table-card tbody tr:hover {
+    background: rgba(232, 247, 228, 0.4);
+}
+
+.sena-label {
+    display: inline-block;
+    margin-bottom: 0.55rem;
+    color: var(--sena-green-900);
+    font-weight: 700;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid rgba(12, 131, 22, 0.2);
+    background: #f8fbf8;
+    border-radius: 0.9rem;
+    min-height: 48px;
+    padding: 0.75rem 0.95rem;
+    color: var(--sena-text);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: rgba(12, 131, 22, 0.35);
+    box-shadow: 0 0 0 0.2rem rgba(44, 176, 57, 0.12);
+    background: #fff;
+}
+
+.form-check-input:checked {
+    background-color: var(--sena-green-700);
+    border-color: var(--sena-green-700);
+}
+
+.badge-sena {
+    background: var(--sena-green-100);
+    color: var(--sena-green-900);
+    border: 1px solid rgba(12, 131, 22, 0.08);
+    border-radius: 999px;
+    padding: 0.45rem 0.7rem;
+    font-weight: 700;
+}
+
+.btn-success,
+.btn-primary,
+.bg-success,
+.card-header.bg-success,
+.card-header.bg-primary,
+.table-success,
+.table thead.table-success th {
+    background: linear-gradient(135deg, var(--sena-green-900), var(--sena-green-700)) !important;
+    border-color: rgba(12, 131, 22, 0.1) !important;
+    color: #fff !important;
+}
+
+.btn-success:hover,
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--sena-green-800), var(--sena-green-900)) !important;
+    color: #fff !important;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #f2c864, #f7d978) !important;
+    border-color: #f2c864 !important;
+    color: #1f2d1a !important;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #e7ba3b, #f0ca59) !important;
+    color: #1f2d1a !important;
+}
+
+.btn-info {
+    background: linear-gradient(135deg, #0d6efd, #2a8cff) !important;
+    border-color: #0d6efd !important;
+    color: #fff !important;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #dc3545, #f15862) !important;
+    border-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+.card-header {
+    border-bottom: 0 !important;
+    padding: 1rem 1.25rem;
+}
+
+.table thead th {
+    border-bottom: none !important;
+}
+
+.action-btn {
+    border-radius: 0.7rem;
+    font-weight: 600;
+    padding: 0.45rem 0.8rem;
+}
+
+.btn-info.action-btn {
+    background: linear-gradient(135deg, #1983d3, #3096f0);
+    border: none;
+    color: #fff;
+}
+
+.btn-warning.action-btn {
+    background: linear-gradient(135deg, #ecb002, #f8c948);
+    border: none;
+    color: #1f1f1f;
+}
+
+.btn-danger.action-btn {
+    background: linear-gradient(135deg, #dc3545, #ef4d63);
+    border: none;
+    color: #fff;
+}
+
+@media (max-width: 767.98px) {
+    .sena-header {
+        align-items: flex-start;
+    }
+
+    .sena-page {
+        padding-top: 1.5rem;
+    }
+
+    .sena-table-card {
+        overflow-x: auto;
+    }
+}
